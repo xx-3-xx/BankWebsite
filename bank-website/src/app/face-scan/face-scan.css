@@ -1,0 +1,278 @@
+.face-scan-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.face-scan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f8f9fa;
+}
+
+.face-scan-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #171717;
+  margin: 0;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #0066cc;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e3f2fd;
+}
+
+/* Content */
+.face-scan-content {
+  flex: 1;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid #ffcdd2;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.retry-button {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.retry-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Camera Section */
+.camera-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.camera-container {
+  width: 100%;
+  max-width: 500px;
+  height: 375px;
+  border: 2px solid #d0d0d0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f9fa;
+}
+
+.camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.camera-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  color: #999;
+}
+
+.camera-placeholder p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Instructions */
+.capture-instructions {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  max-width: 500px;
+  width: 100%;
+}
+
+.capture-instructions h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.capture-instructions ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.capture-instructions li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Capture Button */
+.capture-button {
+  padding: 16px 32px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+  min-width: 200px;
+}
+
+.capture-button:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.capture-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Preview Section */
+.preview-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.image-preview {
+  width: 100%;
+  max-width: 500px;
+  height: 375px;
+  border: 2px solid #d0d0d0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.retake-button {
+  padding: 16px 32px;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+  min-width: 180px;
+}
+
+.retake-button:hover {
+  background-color: #555;
+}
+
+.process-button {
+  padding: 16px 32px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+  min-width: 180px;
+}
+
+.process-button:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.process-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .face-scan-header {
+    padding: 15px 20px;
+  }
+  
+  .face-scan-content {
+    padding: 20px;
+  }
+  
+  .camera-container,
+  .image-preview {
+    height: 300px;
+  }
+  
+  .preview-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .retake-button,
+  .process-button,
+  .capture-button {
+    width: 100%;
+  }
+} 

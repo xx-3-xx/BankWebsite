@@ -1,0 +1,114 @@
+.success-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.success-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.success-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #171717;
+  margin: 0 0 15px 0;
+}
+
+.success-message {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 30px 0;
+}
+
+.success-details {
+  text-align: left;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.success-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #171717;
+  margin: 0 0 15px 0;
+}
+
+.success-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.success-details li {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.success-actions {
+  margin-top: 30px;
+}
+
+.home-button {
+  padding: 16px 32px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #0052a3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .success-container {
+    padding: 10px;
+  }
+  
+  .success-card {
+    padding: 30px 20px;
+  }
+  
+  .success-title {
+    font-size: 24px;
+  }
+  
+  .success-message {
+    font-size: 14px;
+  }
+} 
